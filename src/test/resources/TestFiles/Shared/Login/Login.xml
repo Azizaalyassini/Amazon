@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login">
+    <listeners>
+        <listener class-name="com.amazon.mobile.reporting.TestListener"/>
+    </listeners>
+
+    <test name="Login Without Username And Password">
+        <classes>
+            <class name="com.amazon.tests.login.LoginTest">
+                <methods>
+                    <parameter name="mobileName" value="device1"/>
+                    <parameter name="testID" value="4402"/>
+                    <parameter name="userNameErrorMessage" value="Your Username is required"/>
+                    <parameter name="passwordErrorMessage" value="Your Password is required"/>
+                    <include name="loginNegativeCases"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Login Without Username">
+        <classes>
+            <class name="com.amazon.tests.login.LoginTest">
+                <methods>
+                    <parameter name="mobileName" value="device2"/>
+                    <parameter name="testID" value="4403"/>
+                    <parameter name="password" value="password97"/>
+                    <parameter name="userNameErrorMessage" value="Your Username is required"/>
+                    <include name="loginNegativeCases"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Login Without Password">
+        <classes>
+            <class name="com.amazon.tests.login.LoginTest">
+                <methods>
+                    <parameter name="mobileName" value="device3"/>
+                    <parameter name="testID" value="4405"/>
+                    <parameter name="userName" value="testg"/>
+                    <parameter name="passwordErrorMessage" value="Your Password is required"/>
+                    <include name="loginNegativeCases"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Login With Invalid Credentials">
+        <classes>
+            <class name="com.amazon.tests.login.LoginTest">
+                <methods>
+                    <parameter name="mobileName" value="device4"/>
+                    <parameter name="testID" value="4406"/>
+                    <parameter name="userName" value="testnew2"/>
+                    <parameter name="password" value="123456"/>
+                    <parameter name="invalidCredentialErrorMessage"
+                               value="The authentication tokens you entered were incorrect, please check and try again."/>
+                    <include name="loginNegativeCases"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Login To System With Valid Username And Password">
+        <classes>
+            <class name="com.amazon.tests.login.LoginTest">
+                <methods>
+                    <parameter name="mobileName" value="device1"/>
+                    <parameter name="testID" value="4407"/>
+                    <parameter name="userName" value="mobileg"/>
+                    <include name="loginToSystem"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
