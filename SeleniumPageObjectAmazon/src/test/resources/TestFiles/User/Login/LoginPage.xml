@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="selenium Demo">
+    <listeners>
+        <listener class-name="com.amazon.web.reporting.TestListener"/>
+    </listeners>
+    <test name="add Video Games To The Cart">
+        <classes>
+            <class name="com.amazon.web.tests.user.login.LoginTest">
+                <methods>
+                    <parameter name="email" value="seleniumAutomation008@gmail.com"/>
+                    <parameter name="password" value="Hello123456"/>
+                    <parameter name="text" value="Shop video games for Nintendo, PlayStation, Xbox and more"></parameter>
+                    <parameter name="maximumPrice" value="15000"></parameter>
+                    <include name="addVideoGamesToTheCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
