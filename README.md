@@ -37,7 +37,7 @@ Running the project
 - Latest Version of Maven
 - Git
 - Chrome browser
-- Chromedriver (Make sure that chrome and Chromedriver have the same version)
+- Chromedriver (Make sure that Chrome and Chromedriver have the same version)
 - IntelliJ IDEA
 
 ⚙️ Setup
@@ -49,7 +49,7 @@ Running the project
 4 - Open the ChromeController file and update the browser path to your current path of the Chromedriver.
 5 - Running the Tests
 
-Kindly note that this a page Object project, and I have used an approach to create a separate class for selectors just for better documentation and it doesn't effect the page object pattern implementation at all
+Kindly note that this a page Object project, and I have used an approach to create a separate class for selectors just for better documentation and it doesn't affect the page object pattern implementation at all
 
 ✨ Project Folder Description
 -----------------------
@@ -58,10 +58,10 @@ Now here I'm going to explain each class and what it does exactly in a small des
 
 - **Controllers**
   -------------------------
-	- **BaseTest -->** It is responsible for setting up and tearing down test environments it including the Befor and After class
+	- **BaseTest -->** It is responsible for setting up and tearing down test environments including the Before and After Class
 	- **ChromeController/Edge/Firefox** -->managing the interaction with the  web browser.
 	- **ControllerFactory** --> The ControllerFactory class appears to be a factory class for creating instances of classes that implement the ControllerInterface. It is used to provide flexibility in selecting and creating specific drivers for different web browsers.
-	- **ThreadLocalDriver** --> The ThreadLocalDriver class is a utility class for managing WebDriver instances in a thread-safe and thread-local manner. to ensure that each thread (test execution thread) has its own WebDriver instance, 				making it safe for parallel test execution. 
+	- **ThreadLocalDriver** --> The ThreadLocalDriver class is a utility class for managing WebDriver instances in a thread-safe and thread-local manner. to ensure that each thread (test execution thread) has its own WebDriver instance making it safe for parallel test execution. 
 	-**WebDriverEventHandler** --> The WebDriverEventHandler class is an implementation of the WebDriverListener interface for Selenium. It allows you to listen for various WebDriver events and execute code before or after those events. This is typically used to add custom behavior or interactions with the WebDriver during test execution.
 
    
@@ -78,7 +78,7 @@ Now here I'm going to explain each class and what it does exactly in a small des
 
 **- utils**
 ----------------------------------
-	- **ActionHelper** -->  in this class we create all the commonly used method that we need 
+	- **ActionHelper** -->  In this class we create all the commonly used methods that we need 
 	**- AllPagesHander --> ** handling various pages and their elements in web applications. It acts as a factory for creating page objects for different pages of the web application.
 	**-File --> ** just to declare file type if needed
 	**- StateHelper --> **utility class designed to help manage and store state information during the execution of test steps in a test automation framework. It provides methods for setting, getting, clearing, and determining the size of a state map
