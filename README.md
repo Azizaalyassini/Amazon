@@ -68,7 +68,7 @@ Now here I'm going to explain each class and what it does exactly in a small des
 -Loggin
 ----------------------------
 
-**-StepsLogging **---> The StepsLogging class appears to be a simple logging utility for test automation using TestNG. It is designed to log test steps and related information during test execution. 
+**-StepsLogging ** ---> The StepsLogging class appears to be a simple logging utility for test automation using TestNG. It is designed to log test steps and related information during test execution. 
 
 **-Pages: This will contain all page Object pages**
 ------------------------------
@@ -78,7 +78,9 @@ Now here I'm going to explain each class and what it does exactly in a small des
 
 **- utils**
 ----------------------------------
-	**-ActionHelper -->** in this class we create all the commonly used method that we need 
-	**- AllPagesHander -->** handling various pages and their elements in web applications. It acts as a factory for creating page objects for different pages of the web application.
-	**-File -->** just to declare file type if needed
-	**- StateHelper -->**utility class designed to help manage and store state information during the execution of test steps in a test automation framework. It provides methods for setting, getting, clearing, and determining the size of a state map
+	**-ActionHelper --> ** in this class we create all the commonly used method that we need 
+	**- AllPagesHander --> ** handling various pages and their elements in web applications. It acts as a factory for creating page objects for different pages of the web application.
+	**-File --> ** just to declare file type if needed
+	**- StateHelper --> **utility class designed to help manage and store state information during the execution of test steps in a test automation framework. It provides methods for setting, getting, clearing, and determining the size of a state map
+**Test**
+--------------------------
