@@ -56,20 +56,29 @@ Kindly note that this a page Object project, and I have used an approach to crea
 
 Now here I'm going to explain each class and what it does exactly in a small description:
 
-- Controllers
-	- BaseTest --> It is responsible for setting up and tearing down test environments it including the Befor and After class
-	- ChromeController/Edge/Firefox -->managing the interaction with the  web browser.
-	- ControllerFactory --> The ControllerFactory class appears to be a factory class for creating instances of classes that implement the ControllerInterface. It is used to provide flexibility in selecting and creating specific drivers for different web browsers.
-	- ThreadLocalDriver --> The ThreadLocalDriver class is a utility class for managing WebDriver instances in a thread-safe and thread-local manner. to ensure that each thread (test execution thread) has its own WebDriver instance, 				making it safe for parallel test execution. 
-	-WebDriverEventHandler --> The WebDriverEventHandler class is an implementation of the WebDriverListener interface for Selenium. 				It allows you to listen for various WebDriver events and execute code before or after those events. This is typically used to add custom behavior or interactions with the WebDriver during test execution.
--Logging
-	-StepsLogging ---> The StepsLogging class appears to be a simple logging utility for test automation using TestNG. It is designed 			to log test steps and related information during test execution. 
-- Pages This will contain all page Object pages
+- **Controllers**
+  -------------------------
+	- **BaseTest -->** It is responsible for setting up and tearing down test environments it including the Befor and After class
+	- **ChromeController/Edge/Firefox** -->managing the interaction with the  web browser.
+	- **ControllerFactory** --> The ControllerFactory class appears to be a factory class for creating instances of classes that implement the ControllerInterface. It is used to provide flexibility in selecting and creating specific drivers for different web browsers.
+	- **ThreadLocalDriver **--> The ThreadLocalDriver class is a utility class for managing WebDriver instances in a thread-safe and thread-local manner. to ensure that each thread (test execution thread) has its own WebDriver instance, 				making it safe for parallel test execution. 
+	-**WebDriverEventHandler **--> The WebDriverEventHandler class is an implementation of the WebDriverListener interface for Selenium. It allows you to listen for various WebDriver events and execute code before or after those events. This is typically used to add custom behavior or interactions with the WebDriver during test execution.
 
-- Reporting --> will include the reporting of the test 
+   
+-Loggin
+----------------------------
 
-- utils
-	-ActionHelper --> in this class we creat all the common used method that we need 
-	- AllPagesHander --> handling various pages and their elements in web application. It acts as a factory for 				     creating page objects for different pages of the web application.
-	-File --> just to declare file type if needed
-	- StateHelper -->utility class designed to help manage and store state information during the execution of test steps in a test 			automation framework. It provides methods for setting, getting, clearing, and determining the size of a state map
+**-StepsLogging **---> The StepsLogging class appears to be a simple logging utility for test automation using TestNG. It is designed to log test steps and related information during test execution. 
+
+**-Pages: This will contain all page Object pages**
+------------------------------
+
+**- Reporting --> will include the reporting of the test **
+---------------------------------
+
+**- utils**
+----------------------------------
+	**-ActionHelper -->** in this class we create all the commonly used method that we need 
+	**- AllPagesHander -->** handling various pages and their elements in web applications. It acts as a factory for creating page objects for different pages of the web application.
+	**-File -->** just to declare file type if needed
+	**- StateHelper -->**utility class designed to help manage and store state information during the execution of test steps in a test automation framework. It provides methods for setting, getting, clearing, and determining the size of a state map
