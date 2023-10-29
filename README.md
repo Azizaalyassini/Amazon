@@ -73,7 +73,7 @@ Now here I'm going to explain each class and what it does exactly in a small des
 **-Pages: This will contain all page Object pages**
 ------------------------------
 
-**- Reporting --> will include the reporting of the test **
+**- Reporting --> will include the reporting of the test**
 ---------------------------------
 
 **- utils**
@@ -84,5 +84,5 @@ Now here I'm going to explain each class and what it does exactly in a small des
 	**- StateHelper --> **utility class designed to help manage and store state information during the execution of test steps in a test automation framework. It provides methods for setting, getting, clearing, and determining the size of a state map
 **Test**
 --------------------------
-Java --> will include all tests classes 
-Resources ---> will include all XML files
+**Java** --> will include all test classes 
+**Resources** ---> will include all XML files
