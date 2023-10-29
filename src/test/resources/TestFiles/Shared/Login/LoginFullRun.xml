@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Shared Login Full Run" verbose="1">
-    <suite-files>
-        <suite-file path="Login.xml"/>
-        <suite-file path="ForgotPasswordDW.xml"/>
-        <suite-file path="ForgotUsername.xml"/>
-        <suite-file path="ShowAndHidePassword.xml"/>
-    </suite-files>
-</suite>
