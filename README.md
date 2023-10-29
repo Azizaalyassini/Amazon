@@ -3,7 +3,8 @@ This project includes 3 folders:
 - second folder will include The test cases for https://pay2.foodics.dev/cp_internal/login & https://pay2.foodics.dev/cp_internal/whoami
 - Third Folder will include the mobile framework
 
-Amazon PageObject Project
+**Amazon PageObject Project**
+
 ❓ What is this Repository about?
 This project has the example code for an automation testing project for the Amazon e-commerce website using Selenium WebDriver Java, TestNG, Maven. The project aims to automate the testing of various scenarios on the Amazon website and ensure the website's functionality is not affected by any changes.
 
